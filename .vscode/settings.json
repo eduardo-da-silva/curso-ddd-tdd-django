@@ -1,0 +1,16 @@
+{
+    "python.analysis.extraPaths": [
+        "./src"
+    ],
+    "pylint.path": [
+        "python",
+        "-m",
+        "pylint"
+    ],
+    "python.testing.pytestArgs": [
+        "src"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "python.analysis.autoImportCompletions": true
+}

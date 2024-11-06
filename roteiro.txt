@@ -1,0 +1,40 @@
+/src
+    /core
+        publisher
+            domain/
+                    entities.py
+                    exceptions.py
+                    interfaces.py - Repository ABC
+                    value_objects.py
+
+            application/
+                    use_case/       (services)
+                        create_publisher.py
+                        get_publisher.py
+                        list_publishers.py
+                        retrieve_publisher.py
+                        delete_publisher.py
+            infra/
+                publisher_django_app
+                    /models
+                    /serializers
+                    /views
+                    /repository
+            tests/
+                /unit
+                    /application
+                    /domain
+                    /infra
+                /integration
+                    /application    
+                    /infra
+                /e2e
+                    /infra
+                        - test_create_publisher.py
+                        - test_get_publisher.py
+                        - test_list_publishers.py
+                        - test_retrieve_publisher.py
+                        - test_delete_publisher.py
+
+    /django-project
+    manage.py
